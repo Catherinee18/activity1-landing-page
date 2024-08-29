@@ -33,7 +33,7 @@ header .home {
 }
 
 header h1 {
-    font-size: 4em;
+    font-size: 2.5em;;
     margin: 0;
     font-weight: 700;
 }
@@ -190,4 +190,47 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 100px 20px; /* Further reduce padding for smaller screens */
+    }
+
+    header h1 {
+        font-size: 5em; /* Further reduce font size for smaller screens */
+    }
+
+    header p {
+        font-size: 0.5em; /* Further reduce font size for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about, #technologies, #contact, #cta {
+        width: 90%;
+        margin: 20px auto;
+        padding: 40px 20px;
+    }
+
+    #technologies {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .technology {
+        width: 90%;
+    }
+
+    #contact form {
+        width: 100%;
+    }
+
+    #contact input, #contact textarea {
+        width: 90%;
+    }
 }
